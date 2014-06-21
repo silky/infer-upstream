@@ -7,11 +7,11 @@ upstream repository, writes it to standard out. Otherwise writes nothing.
 Usage:
 
 ````
-> infer-upstream scirate3 -u silky
+> infer-upstream -r scirate3 -u silky
 git@github.com:draftable/scirate3.git
 ````
 
-Another usage
+Another usage:
 
 ````
 cd scirate3
