@@ -7,7 +7,7 @@ upstream repository, writes it to standard out. Otherwise writes nothing.
 Usage:
 
 ````
-> infer-upstream -r scirate3 -u silky
+noon@dev> infer-upstream -r scirate3 -u silky
 git@github.com:draftable/scirate3.git
 ````
 
@@ -32,10 +32,22 @@ For all folders in a given directory:
 Usage:
 
 ````
-> cd ~/dev
-> git clone git@github.com:silky/infer-upstream
-> infer-upstream/upstream_everything.sh
+noon@~> cd dev
+noon@dev> git clone git@github.com:silky/infer-upstream
+noon@dev> infer-upstream/upstream_everything.sh
 ...
+````
+
+With `upstream` set on your repos, you can then run `fetch_upstreams.sh`, if
+you like, which will bring down any incoming changes and give print out a
+short summary.
+
+Example:
+
+````
+noon@dev>infer-upstream/fetch_upstreams.sh 
+fetching upstream for Javascript-Voronoi ...
+ 1 file changed, 2 insertions(+), 2 deletions(-)
 ````
 
 Notes:
