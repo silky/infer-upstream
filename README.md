@@ -1,8 +1,8 @@
 infer-upstream
 ==============
 
-Takes a directory, and looks up the upstream repository. When found, it
-creates this as a remote in the given repository.
+Takes a directory, and looks up the upstream repository. If there is an
+upstream repository, writes it to standard out. Otherwise writes nothing.
 
 Usage:
 
