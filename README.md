@@ -15,5 +15,5 @@ Another usage:
 
 ````
 cd scirate3
-git remote add upstream `infer-upstream scirate3 -u silky`
+git remote add upstream `infer-upstream -r scirate3 -u silky`
 ````
