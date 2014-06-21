@@ -1,7 +1,7 @@
 infer-upstream
 ==============
 
-Takes a directory, and looks up the upstream repository. If there is an
+Takes a repo name, and looks up the upstream repository. If there is an
 upstream repository, writes it to standard out. Otherwise writes nothing.
 
 Usage:
