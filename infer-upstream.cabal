@@ -10,6 +10,7 @@ maintainer:          noonsilk@gmail.com
 category:            Development
 build-type:          Simple
 cabal-version:       >=1.8
+extra-source-files:  README.md, fetch_upstreams.sh, upstream_everything.sh
 
 executable infer-upstream
   main-is: infer-upstream.hs
