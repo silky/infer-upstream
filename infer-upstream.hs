@@ -107,10 +107,10 @@ inferUpstream repo = do
 originParser = do 
   sequence (map P.char "origin")
   P.many1 P.space
-  sequence (map P.char "https://github.com/")
-  user <- P.many1 (P.satisfy ( \x -> not (isSpace x || x=='/') ))
+  sequence (map P.char "https://github.com/") P.<|> sequence (map P.char "git@github.com:") 
+  user <- P.many1 (P.satisfy ( \x -> not (isSpace x || x=='/' || x == '.')))
   P.char '/'
-  repo <- P.many1 (P.satisfy ( \x -> not (isSpace x || x=='/') ))
+  repo <- P.many1 (P.satisfy ( \x -> not (isSpace x || x=='/' || x == '.')))
   return (repo,user)
 
 obtainOriginFromCurrentDirectory = do
