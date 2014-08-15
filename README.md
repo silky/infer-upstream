@@ -4,6 +4,23 @@ infer-upstream
 Takes a repo name, and looks up the upstream repository. If there is an
 upstream repository, writes it to standard out. Otherwise writes nothing.
 
+Installation
+
+This package is available on [hackage](http://hackage.haskell.org/package/infer-upstream)
+so can be installed with
+
+````
+cabal install infer-upstream
+````
+
+Alternatively, you can clone this repo and install with cabal
+
+````
+git clone https://github.com/silky/infer-upstream.git
+cd infer-upstream
+cabal install
+````
+
 Usage:
 
 ````
