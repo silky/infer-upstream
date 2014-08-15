@@ -14,7 +14,6 @@ import System.IO (hGetContents)
 import System.Process (createProcess,StdStream(CreatePipe),proc,std_out)
 import qualified Text.ParserCombinators.Parsec as P
 import Data.Char (isSpace)
-import Data.Either (isRight)
 import System.Environment (getArgs, getProgName)
 
 import qualified Options.Applicative.Builder.Internal as X
@@ -120,3 +119,7 @@ obtainOriginFromCurrentDirectory = do
   return (case originInfo of 
    [Right x] -> Just x
    _ -> Nothing)
+
+isRight r = case r of 
+  (Right _) -> True 
+  _ -> False
