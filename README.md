@@ -14,8 +14,8 @@ git@github.com:draftable/scirate3.git
 Another usage:
 
 ````
-cd scirate3
-git remote add upstream `infer-upstream -r scirate3 -u silky`
+noon@dev> cd scirate3
+noon@dev> git remote add upstream `infer-upstream --using-cwd`
 ````
 
 A more interesting usage (and the reason I wrote this) is to use the
